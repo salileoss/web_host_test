@@ -1,9 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <title>Welcome!</title>
+
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Calibri, sans-serif;
+      }
+
+      .content-section {
+        white-space: pre;
+        width: 50%;
+        margin: 0 auto;
+        padding: 15% 0;
+      }
+      .content-section h1 {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      .content-section p {
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .video-section {
+        position: fixed;
+
+        overflow: hidden;
+      }
+      /* #video-elem {
+        width: 100%;
+      } */
+      /* video::-webkit-media-controls {
+        display: none !important;
+      } */
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .video-overlay:hover {
+        opacity: 1;
+      }
+      .video-overlay h1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-transform: uppercase;
+        font-size: 3em;
+        color: #000;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <div class="content-section">
+      <h1>N E V E R  G O N N A  G I V E  U  U P</h1>
+    </div>
+
+    <div class="video-section">
+      <iframe
+        width="1280"
+        height="720"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?&autoplay=1"
+        title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+
+      <!-- <div class="video-overlay">
+        <h1>This Is A Video Overlay</h1>
+      </div> -->
+    </div>
+
+    <div class="content-section">
+      <h1>Video As A Background For Website Section</h1>
+    </div>
   </body>
 </html>
